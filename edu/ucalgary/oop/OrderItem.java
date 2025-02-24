@@ -48,7 +48,7 @@ public class OrderItem {
         return customizations.toArray(new Customization[0]);
     }
 
-    // fix me
+    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(item.getName()).append(" - $").append(String.format("%.2f", item.getPrice()));
