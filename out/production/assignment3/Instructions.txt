@@ -1,0 +1,37 @@
+Overview:
+You are asked to implement part of an order management system for a pizza chain. The system tracks menu items and their available customizations, allowing customers to place orders with their desired modifications. The complete system will allow customers to duplicate an earlier order, which requires support for deep copying of previous orders.
+
+Topics:
+* String manipulation using regular expressions (Strings PartII)
+* String formatting (Strings PartII)
+* Deep copying using a constructor (Copying Objects)
+* Throwing uncaught exceptions (Exception Handling)
+* Implementing aggregation relationships (Class Relationships)
+* Writing code based on unit tests (Testing PartII)
+* Debugging based on unit tests (Testing PartII)
+
+Instructions:
+(1) Debug the following two classes:
+     Customization - Represents a modification that can be applied to a menu item (e.g., extra cheese).
+     MenuItem - Represents a single item on the menu.
+(2) Write the following two classes:
+     OrderItem - Represent a single item in a customer's order (a MenuItem plus Customizations)
+     Order - Represents a customer's order (consisting of OrderItems).
+
+Some test files have been provided to demonstrate the expected behavior of each class.
+
+The program will be assessed through automated testing (described in lesson Testing Part I). This means that the program will be evaluated by the correctness of each method, not by the printed output. Different values will be used for testing than the ones provided in the example main(). You may write a main() or modify tests to review different scenarios. 
+
+You may assume in your implementation that an Order will never contain more than 20 OrderItems, and that an OrderItem will never contain more than 10 Customizations. However, regardless of internal assumptions, all methods which return arrays should return arrays without any empty elements (i.e., resized to fit the actual number of elements).
+
+Warning: You may receive a 0 if your submission does not follow the submission requirements. Your code must compile and run on the command line, be part of the edu.ucalgary.oop package, and be submitted in a zip file exactly as described in the general submission instructions.
+
+Submit only (and all of) the files:
+         * Customization.java
+         * MenuItem.java
+         * Order.java
+         * OrderItem.java
+
+Warning: Do NOT include any Test files as this will cause a compilation problem in automatic testing, resulting in a 0.
+
+You will receive one mark for successfully passing each test. The test names and functionality will be the same as the ones provided, except that different values will be used in the tests to prevent hardcoding.
